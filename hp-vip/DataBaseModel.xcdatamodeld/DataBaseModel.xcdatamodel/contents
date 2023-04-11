@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="House" representedClassName="House" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image_url" optional="YES" attributeType="String"/>
+        <attribute name="members" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="fkMembers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Member" inverseName="fkHouses" inverseEntity="Member"/>
+    </entity>
+    <entity name="Member" representedClassName="Member" syncable="YES">
+        <attribute name="alive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="yearOfBirth" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="fkHouses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="fkMembers" inverseEntity="House"/>
+    </entity>
+</model>

@@ -1,0 +1,6 @@
+framework module Pods_hp_vip_hp_vipUITests {
+  umbrella header "Pods-hp-vip-hp-vipUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15A1736A9030F698B631A72C /* Pods_hp_vipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F6D2DA9E203D2637CCD20 /* Pods_hp_vipTests.framework */; };
+		3C0D232829D4A15900EE8F62 /* ViewUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D232729D4A15900EE8F62 /* ViewUIScrollView.swift */; };
+		3C1398E529C8C48000C93C22 /* CardMemberFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1398E429C8C48000C93C22 /* CardMemberFooter.swift */; };
+		3C2EA3B829D5AB7500B02615 /* DataBaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EA3B629D5AB7500B02615 /* DataBaseModel.xcdatamodeld */; };
+		3C2EA3BA29D5AD5200B02615 /* HouseListCDWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EA3B929D5AD5200B02615 /* HouseListCDWorker.swift */; };
+		3C2F9FCA29C0F033009D5794 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FC929C0F033009D5794 /* HouseListViewController.swift */; };
+		3C2F9FCC29C0F3AE009D5794 /* HouseListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FCB29C0F3AE009D5794 /* HouseListInteractor.swift */; };
+		3C2F9FCE29C0F48A009D5794 /* HouseListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FCD29C0F48A009D5794 /* HouseListModels.swift */; };
+		3C2F9FD029C0F5D6009D5794 /* HouseListAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FCF29C0F5D6009D5794 /* HouseListAPIWorker.swift */; };
+		3C2F9FD329C0FC3D009D5794 /* HouseAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FD229C0FC3D009D5794 /* HouseAPIModel.swift */; };
+		3C2F9FD529C0FD60009D5794 /* HouseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FD429C0FD60009D5794 /* HouseListPresenter.swift */; };
+		3C2F9FD729C1EB9E009D5794 /* HouseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FD629C1EB9D009D5794 /* HouseViewModel.swift */; };
+		3C2F9FD929C1F9F6009D5794 /* HouseListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FD829C1F9F6009D5794 /* HouseListRouter.swift */; };
+		3C2F9FDB29C1FDDB009D5794 /* HouseListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FDA29C1FDDB009D5794 /* HouseListConfiguration.swift */; };
+		3C3CBFFB29CCB6FE0093257D /* HouseListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CBFFA29CCB6FE0093257D /* HouseListViewControllerTests.swift */; };
+		3C3CC21A29D71DBA00D7B580 /* MemberListCDWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC21929D71DBA00D7B580 /* MemberListCDWorker.swift */; };
+		3C3CC21C29D748C400D7B580 /* MemberListQuickActionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC21B29D748C400D7B580 /* MemberListQuickActionWorker.swift */; };
+		3C3CC68529D5C9AB006F6AC9 /* CDWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC68429D5C9AB006F6AC9 /* CDWorkerProtocol.swift */; };
+		3C89949929CDECC900BC937C /* DispatchQueueMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89949829CDECC900BC937C /* DispatchQueueMock.swift */; };
+		3C89949B29CDEEC600BC937C /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89949A29CDEEC600BC937C /* DispatchQueueExtension.swift */; };
+		3C89949D29CE1F3300BC937C /* HouseListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89949C29CE1F3300BC937C /* HouseListInteractorTests.swift */; };
+		3C89949F29CE238D00BC937C /* HouseListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89949E29CE238D00BC937C /* HouseListPresenterTests.swift */; };
+		3C912CF329C2241F00EA1EC2 /* HouseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912CF229C2241F00EA1EC2 /* HouseUIButton.swift */; };
+		3C912CF529C224A100EA1EC2 /* GroupHouseUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912CF429C224A100EA1EC2 /* GroupHouseUIButton.swift */; };
+		3C912CF729C2253C00EA1EC2 /* LoadingUIActivityIndicatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912CF629C2253C00EA1EC2 /* LoadingUIActivityIndicatior.swift */; };
+		3C912CFA29C236B600EA1EC2 /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912CF929C236B600EA1EC2 /* MemberListViewController.swift */; };
+		3C912CFC29C236F400EA1EC2 /* MemberListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912CFB29C236F400EA1EC2 /* MemberListConfiguration.swift */; };
+		3C912CFE29C23E2800EA1EC2 /* MemberListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912CFD29C23E2800EA1EC2 /* MemberListInteractor.swift */; };
+		3C912D0029C23F8E00EA1EC2 /* MemberListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912CFF29C23F8E00EA1EC2 /* MemberListPresenter.swift */; };
+		3C912D0229C2466B00EA1EC2 /* MemberListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0129C2466B00EA1EC2 /* MemberListModels.swift */; };
+		3C912D0429C246BA00EA1EC2 /* MemberAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0329C246BA00EA1EC2 /* MemberAPIModel.swift */; };
+		3C912D0629C2474100EA1EC2 /* MemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0529C2474100EA1EC2 /* MemberViewModel.swift */; };
+		3C912D0829C2482C00EA1EC2 /* MemberListAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0729C2482C00EA1EC2 /* MemberListAPIWorker.swift */; };
+		3C912D0A29C2538C00EA1EC2 /* CardMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0929C2538C00EA1EC2 /* CardMemberView.swift */; };
+		3CA45F5429C0EF100068FB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45F5329C0EF100068FB12 /* AppDelegate.swift */; };
+		3CA45F5D29C0EF110068FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA45F5C29C0EF110068FB12 /* Assets.xcassets */; };
+		3CA45F7529C0EF110068FB12 /* hp_vipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45F7429C0EF110068FB12 /* hp_vipUITests.swift */; };
+		3CA45F7729C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45F7629C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift */; };
+		3CFCF9A629D20AC8007373EC /* APIWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFCF9A529D20AC8007373EC /* APIWorkerProtocol.swift */; };
+		6FC3D237410BA39DF103F9C5 /* Pods_hp_vip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC63E152AC9CC95545218B45 /* Pods_hp_vip.framework */; };
+		A8D9E3A65D2FE5FBF1C66493 /* Pods_hp_vip_hp_vipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324DCF0CBD77946F18F8D187 /* Pods_hp_vip_hp_vipUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CA45F6729C0EF110068FB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA45F4829C0EF100068FB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CA45F4F29C0EF100068FB12;
+			remoteInfo = "hp-vip";
+		};
+		3CA45F7129C0EF110068FB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA45F4829C0EF100068FB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CA45F4F29C0EF100068FB12;
+			remoteInfo = "hp-vip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E125675862885AAA6F2EE89 /* Pods-hp-vip-hp-vipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vip-hp-vipUITests.release.xcconfig"; path = "Target Support Files/Pods-hp-vip-hp-vipUITests/Pods-hp-vip-hp-vipUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2871FA735FD3CD20AC3B139A /* Pods-hp-vipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vipTests.debug.xcconfig"; path = "Target Support Files/Pods-hp-vipTests/Pods-hp-vipTests.debug.xcconfig"; sourceTree = "<group>"; };
+		324DCF0CBD77946F18F8D187 /* Pods_hp_vip_hp_vipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hp_vip_hp_vipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0D232729D4A15900EE8F62 /* ViewUIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUIScrollView.swift; sourceTree = "<group>"; };
+		3C1398E429C8C48000C93C22 /* CardMemberFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMemberFooter.swift; sourceTree = "<group>"; };
+		3C2EA3B729D5AB7500B02615 /* DataBaseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBaseModel.xcdatamodel; sourceTree = "<group>"; };
+		3C2EA3B929D5AD5200B02615 /* HouseListCDWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListCDWorker.swift; sourceTree = "<group>"; };
+		3C2F9FC929C0F033009D5794 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
+		3C2F9FCB29C0F3AE009D5794 /* HouseListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListInteractor.swift; sourceTree = "<group>"; };
+		3C2F9FCD29C0F48A009D5794 /* HouseListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListModels.swift; sourceTree = "<group>"; };
+		3C2F9FCF29C0F5D6009D5794 /* HouseListAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListAPIWorker.swift; sourceTree = "<group>"; };
+		3C2F9FD229C0FC3D009D5794 /* HouseAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseAPIModel.swift; sourceTree = "<group>"; };
+		3C2F9FD429C0FD60009D5794 /* HouseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListPresenter.swift; sourceTree = "<group>"; };
+		3C2F9FD629C1EB9D009D5794 /* HouseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewModel.swift; sourceTree = "<group>"; };
+		3C2F9FD829C1F9F6009D5794 /* HouseListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListRouter.swift; sourceTree = "<group>"; };
+		3C2F9FDA29C1FDDB009D5794 /* HouseListConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListConfiguration.swift; sourceTree = "<group>"; };
+		3C3CBFFA29CCB6FE0093257D /* HouseListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewControllerTests.swift; sourceTree = "<group>"; };
+		3C3CC21929D71DBA00D7B580 /* MemberListCDWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListCDWorker.swift; sourceTree = "<group>"; };
+		3C3CC21B29D748C400D7B580 /* MemberListQuickActionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListQuickActionWorker.swift; sourceTree = "<group>"; };
+		3C3CC68429D5C9AB006F6AC9 /* CDWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDWorkerProtocol.swift; sourceTree = "<group>"; };
+		3C89949829CDECC900BC937C /* DispatchQueueMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueMock.swift; sourceTree = "<group>"; };
+		3C89949A29CDEEC600BC937C /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		3C89949C29CE1F3300BC937C /* HouseListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListInteractorTests.swift; sourceTree = "<group>"; };
+		3C89949E29CE238D00BC937C /* HouseListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListPresenterTests.swift; sourceTree = "<group>"; };
+		3C912CF229C2241F00EA1EC2 /* HouseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseUIButton.swift; sourceTree = "<group>"; };
+		3C912CF429C224A100EA1EC2 /* GroupHouseUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHouseUIButton.swift; sourceTree = "<group>"; };
+		3C912CF629C2253C00EA1EC2 /* LoadingUIActivityIndicatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUIActivityIndicatior.swift; sourceTree = "<group>"; };
+		3C912CF929C236B600EA1EC2 /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
+		3C912CFB29C236F400EA1EC2 /* MemberListConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListConfiguration.swift; sourceTree = "<group>"; };
+		3C912CFD29C23E2800EA1EC2 /* MemberListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListInteractor.swift; sourceTree = "<group>"; };
+		3C912CFF29C23F8E00EA1EC2 /* MemberListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListPresenter.swift; sourceTree = "<group>"; };
+		3C912D0129C2466B00EA1EC2 /* MemberListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListModels.swift; sourceTree = "<group>"; };
+		3C912D0329C246BA00EA1EC2 /* MemberAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberAPIModel.swift; sourceTree = "<group>"; };
+		3C912D0529C2474100EA1EC2 /* MemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewModel.swift; sourceTree = "<group>"; };
+		3C912D0729C2482C00EA1EC2 /* MemberListAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListAPIWorker.swift; sourceTree = "<group>"; };
+		3C912D0929C2538C00EA1EC2 /* CardMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMemberView.swift; sourceTree = "<group>"; };
+		3CA45F5029C0EF100068FB12 /* hp-vip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hp-vip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA45F5329C0EF100068FB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CA45F5C29C0EF110068FB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CA45F6129C0EF110068FB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA45F6629C0EF110068FB12 /* hp-vipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hp-vipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA45F7029C0EF110068FB12 /* hp-vipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hp-vipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA45F7429C0EF110068FB12 /* hp_vipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hp_vipUITests.swift; sourceTree = "<group>"; };
+		3CA45F7629C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hp_vipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CFCF9A529D20AC8007373EC /* APIWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWorkerProtocol.swift; sourceTree = "<group>"; };
+		494F6D2DA9E203D2637CCD20 /* Pods_hp_vipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hp_vipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CAB95733562529E7F701B13 /* Pods-hp-vip-hp-vipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vip-hp-vipUITests.debug.xcconfig"; path = "Target Support Files/Pods-hp-vip-hp-vipUITests/Pods-hp-vip-hp-vipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89A6EB79197401F5757E9E27 /* Pods-hp-vip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vip.debug.xcconfig"; path = "Target Support Files/Pods-hp-vip/Pods-hp-vip.debug.xcconfig"; sourceTree = "<group>"; };
+		9271B1FFA45B3B8C4A31EF8F /* Pods-hp-vip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vip.release.xcconfig"; path = "Target Support Files/Pods-hp-vip/Pods-hp-vip.release.xcconfig"; sourceTree = "<group>"; };
+		DAB2A7D5D1B92FEA607D9892 /* Pods-hp-vipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vipTests.release.xcconfig"; path = "Target Support Files/Pods-hp-vipTests/Pods-hp-vipTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC63E152AC9CC95545218B45 /* Pods_hp_vip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hp_vip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CA45F4D29C0EF100068FB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC3D237410BA39DF103F9C5 /* Pods_hp_vip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA45F6329C0EF110068FB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A1736A9030F698B631A72C /* Pods_hp_vipTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA45F6D29C0EF110068FB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D9E3A65D2FE5FBF1C66493 /* Pods_hp_vip_hp_vipUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B8F4BC0CA23B1EC8B65777 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89A6EB79197401F5757E9E27 /* Pods-hp-vip.debug.xcconfig */,
+				9271B1FFA45B3B8C4A31EF8F /* Pods-hp-vip.release.xcconfig */,
+				7CAB95733562529E7F701B13 /* Pods-hp-vip-hp-vipUITests.debug.xcconfig */,
+				0E125675862885AAA6F2EE89 /* Pods-hp-vip-hp-vipUITests.release.xcconfig */,
+				2871FA735FD3CD20AC3B139A /* Pods-hp-vipTests.debug.xcconfig */,
+				DAB2A7D5D1B92FEA607D9892 /* Pods-hp-vipTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C2F9FC729C0EF51009D5794 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3C2F9FC829C0EFA4009D5794 /* HouseList */,
+				3C912CF829C2368400EA1EC2 /* MemberList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3C2F9FC829C0EFA4009D5794 /* HouseList */ = {
+			isa = PBXGroup;
+			children = (
+				3C2F9FC929C0F033009D5794 /* HouseListViewController.swift */,
+				3C2F9FCB29C0F3AE009D5794 /* HouseListInteractor.swift */,
+				3C2F9FD429C0FD60009D5794 /* HouseListPresenter.swift */,
+				3C2F9FCD29C0F48A009D5794 /* HouseListModels.swift */,
+				3C2F9FCF29C0F5D6009D5794 /* HouseListAPIWorker.swift */,
+				3C2EA3B929D5AD5200B02615 /* HouseListCDWorker.swift */,
+				3C2F9FDA29C1FDDB009D5794 /* HouseListConfiguration.swift */,
+				3C2F9FD829C1F9F6009D5794 /* HouseListRouter.swift */,
+			);
+			path = HouseList;
+			sourceTree = "<group>";
+		};
+		3C2F9FD129C0FC23009D5794 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C2F9FD229C0FC3D009D5794 /* HouseAPIModel.swift */,
+				3C2F9FD629C1EB9D009D5794 /* HouseViewModel.swift */,
+				3C912D0329C246BA00EA1EC2 /* MemberAPIModel.swift */,
+				3C912D0529C2474100EA1EC2 /* MemberViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C3CBFF829CCB6940093257D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3C3CBFF929CCB69C0093257D /* HouseList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3C3CBFF929CCB69C0093257D /* HouseList */ = {
+			isa = PBXGroup;
+			children = (
+				3C3CBFFA29CCB6FE0093257D /* HouseListViewControllerTests.swift */,
+				3C89949C29CE1F3300BC937C /* HouseListInteractorTests.swift */,
+				3C89949E29CE238D00BC937C /* HouseListPresenterTests.swift */,
+			);
+			path = HouseList;
+			sourceTree = "<group>";
+		};
+		3C89949729CDECB500BC937C /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3C89949829CDECC900BC937C /* DispatchQueueMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		3C8C03008B91316CB5048BE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC63E152AC9CC95545218B45 /* Pods_hp_vip.framework */,
+				324DCF0CBD77946F18F8D187 /* Pods_hp_vip_hp_vipUITests.framework */,
+				494F6D2DA9E203D2637CCD20 /* Pods_hp_vipTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C912CF129C223FC00EA1EC2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3CFCF9A429D20A54007373EC /* Architecture */,
+				3CFCF9A329D20A30007373EC /* OSExtension */,
+				3CFCF9A229D20A16007373EC /* UILib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3C912CF829C2368400EA1EC2 /* MemberList */ = {
+			isa = PBXGroup;
+			children = (
+				3C912CF929C236B600EA1EC2 /* MemberListViewController.swift */,
+				3C912CFD29C23E2800EA1EC2 /* MemberListInteractor.swift */,
+				3C912CFF29C23F8E00EA1EC2 /* MemberListPresenter.swift */,
+				3C912D0129C2466B00EA1EC2 /* MemberListModels.swift */,
+				3C912D0729C2482C00EA1EC2 /* MemberListAPIWorker.swift */,
+				3C3CC21929D71DBA00D7B580 /* MemberListCDWorker.swift */,
+				3C3CC21B29D748C400D7B580 /* MemberListQuickActionWorker.swift */,
+				3C912CFB29C236F400EA1EC2 /* MemberListConfiguration.swift */,
+			);
+			path = MemberList;
+			sourceTree = "<group>";
+		};
+		3CA45F4729C0EF100068FB12 = {
+			isa = PBXGroup;
+			children = (
+				3CA45F5229C0EF100068FB12 /* hp-vip */,
+				3CA45F6929C0EF110068FB12 /* hp-vipTests */,
+				3CA45F7329C0EF110068FB12 /* hp-vipUITests */,
+				3CA45F5129C0EF100068FB12 /* Products */,
+				18B8F4BC0CA23B1EC8B65777 /* Pods */,
+				3C8C03008B91316CB5048BE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CA45F5129C0EF100068FB12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CA45F5029C0EF100068FB12 /* hp-vip.app */,
+				3CA45F6629C0EF110068FB12 /* hp-vipTests.xctest */,
+				3CA45F7029C0EF110068FB12 /* hp-vipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CA45F5229C0EF100068FB12 /* hp-vip */ = {
+			isa = PBXGroup;
+			children = (
+				3C912CF129C223FC00EA1EC2 /* Common */,
+				3C2F9FD129C0FC23009D5794 /* Models */,
+				3C2F9FC729C0EF51009D5794 /* Scenes */,
+				3CA45F5329C0EF100068FB12 /* AppDelegate.swift */,
+				3CA45F5C29C0EF110068FB12 /* Assets.xcassets */,
+				3CA45F6129C0EF110068FB12 /* Info.plist */,
+				3C2EA3B629D5AB7500B02615 /* DataBaseModel.xcdatamodeld */,
+			);
+			path = "hp-vip";
+			sourceTree = "<group>";
+		};
+		3CA45F6929C0EF110068FB12 /* hp-vipTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C89949729CDECB500BC937C /* Mock */,
+				3C3CBFF829CCB6940093257D /* Scenes */,
+			);
+			path = "hp-vipTests";
+			sourceTree = "<group>";
+		};
+		3CA45F7329C0EF110068FB12 /* hp-vipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CA45F7429C0EF110068FB12 /* hp_vipUITests.swift */,
+				3CA45F7629C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift */,
+			);
+			path = "hp-vipUITests";
+			sourceTree = "<group>";
+		};
+		3CFCF9A229D20A16007373EC /* UILib */ = {
+			isa = PBXGroup;
+			children = (
+				3C0D232729D4A15900EE8F62 /* ViewUIScrollView.swift */,
+				3C912CF229C2241F00EA1EC2 /* HouseUIButton.swift */,
+				3C912CF429C224A100EA1EC2 /* GroupHouseUIButton.swift */,
+				3C912CF629C2253C00EA1EC2 /* LoadingUIActivityIndicatior.swift */,
+				3C912D0929C2538C00EA1EC2 /* CardMemberView.swift */,
+				3C1398E429C8C48000C93C22 /* CardMemberFooter.swift */,
+			);
+			path = UILib;
+			sourceTree = "<group>";
+		};
+		3CFCF9A329D20A30007373EC /* OSExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3C89949A29CDEEC600BC937C /* DispatchQueueExtension.swift */,
+			);
+			path = OSExtension;
+			sourceTree = "<group>";
+		};
+		3CFCF9A429D20A54007373EC /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				3CFCF9A529D20AC8007373EC /* APIWorkerProtocol.swift */,
+				3C3CC68429D5C9AB006F6AC9 /* CDWorkerProtocol.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CA45F4F29C0EF100068FB12 /* hp-vip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA45F7A29C0EF110068FB12 /* Build configuration list for PBXNativeTarget "hp-vip" */;
+			buildPhases = (
+				436FA8838F362E92C5132ABE /* [CP] Check Pods Manifest.lock */,
+				3CA45F4C29C0EF100068FB12 /* Sources */,
+				3CA45F4D29C0EF100068FB12 /* Frameworks */,
+				3CA45F4E29C0EF100068FB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hp-vip";
+			productName = "hp-vip";
+			productReference = 3CA45F5029C0EF100068FB12 /* hp-vip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CA45F6529C0EF110068FB12 /* hp-vipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA45F7D29C0EF110068FB12 /* Build configuration list for PBXNativeTarget "hp-vipTests" */;
+			buildPhases = (
+				1ACEF56AD955FB27AC670907 /* [CP] Check Pods Manifest.lock */,
+				3CA45F6229C0EF110068FB12 /* Sources */,
+				3CA45F6329C0EF110068FB12 /* Frameworks */,
+				3CA45F6429C0EF110068FB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CA45F6829C0EF110068FB12 /* PBXTargetDependency */,
+			);
+			name = "hp-vipTests";
+			productName = "hp-vipTests";
+			productReference = 3CA45F6629C0EF110068FB12 /* hp-vipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CA45F6F29C0EF110068FB12 /* hp-vipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA45F8029C0EF110068FB12 /* Build configuration list for PBXNativeTarget "hp-vipUITests" */;
+			buildPhases = (
+				8167FB54409A39C223403F68 /* [CP] Check Pods Manifest.lock */,
+				3CA45F6C29C0EF110068FB12 /* Sources */,
+				3CA45F6D29C0EF110068FB12 /* Frameworks */,
+				3CA45F6E29C0EF110068FB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CA45F7229C0EF110068FB12 /* PBXTargetDependency */,
+			);
+			name = "hp-vipUITests";
+			productName = "hp-vipUITests";
+			productReference = 3CA45F7029C0EF110068FB12 /* hp-vipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CA45F4829C0EF100068FB12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3CA45F4F29C0EF100068FB12 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					3CA45F6529C0EF110068FB12 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 3CA45F4F29C0EF100068FB12;
+					};
+					3CA45F6F29C0EF110068FB12 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 3CA45F4F29C0EF100068FB12;
+					};
+				};
+			};
+			buildConfigurationList = 3CA45F4B29C0EF100068FB12 /* Build configuration list for PBXProject "hp-vip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CA45F4729C0EF100068FB12;
+			productRefGroup = 3CA45F5129C0EF100068FB12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CA45F4F29C0EF100068FB12 /* hp-vip */,
+				3CA45F6529C0EF110068FB12 /* hp-vipTests */,
+				3CA45F6F29C0EF110068FB12 /* hp-vipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CA45F4E29C0EF100068FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA45F5D29C0EF110068FB12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA45F6429C0EF110068FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA45F6E29C0EF110068FB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ACEF56AD955FB27AC670907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hp-vipTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		436FA8838F362E92C5132ABE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hp-vip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8167FB54409A39C223403F68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hp-vip-hp-vipUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CA45F4C29C0EF100068FB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C2F9FD029C0F5D6009D5794 /* HouseListAPIWorker.swift in Sources */,
+				3CA45F5429C0EF100068FB12 /* AppDelegate.swift in Sources */,
+				3C912CFA29C236B600EA1EC2 /* MemberListViewController.swift in Sources */,
+				3C912CFC29C236F400EA1EC2 /* MemberListConfiguration.swift in Sources */,
+				3CFCF9A629D20AC8007373EC /* APIWorkerProtocol.swift in Sources */,
+				3C912CFE29C23E2800EA1EC2 /* MemberListInteractor.swift in Sources */,
+				3C2F9FD929C1F9F6009D5794 /* HouseListRouter.swift in Sources */,
+				3C2EA3B829D5AB7500B02615 /* DataBaseModel.xcdatamodeld in Sources */,
+				3C3CC21C29D748C400D7B580 /* MemberListQuickActionWorker.swift in Sources */,
+				3C912D0429C246BA00EA1EC2 /* MemberAPIModel.swift in Sources */,
+				3C912CF729C2253C00EA1EC2 /* LoadingUIActivityIndicatior.swift in Sources */,
+				3C912D0629C2474100EA1EC2 /* MemberViewModel.swift in Sources */,
+				3C2F9FD729C1EB9E009D5794 /* HouseViewModel.swift in Sources */,
+				3C912D0A29C2538C00EA1EC2 /* CardMemberView.swift in Sources */,
+				3C2F9FD529C0FD60009D5794 /* HouseListPresenter.swift in Sources */,
+				3C912D0229C2466B00EA1EC2 /* MemberListModels.swift in Sources */,
+				3C2EA3BA29D5AD5200B02615 /* HouseListCDWorker.swift in Sources */,
+				3C3CC21A29D71DBA00D7B580 /* MemberListCDWorker.swift in Sources */,
+				3C2F9FDB29C1FDDB009D5794 /* HouseListConfiguration.swift in Sources */,
+				3C912D0029C23F8E00EA1EC2 /* MemberListPresenter.swift in Sources */,
+				3C912D0829C2482C00EA1EC2 /* MemberListAPIWorker.swift in Sources */,
+				3C912CF529C224A100EA1EC2 /* GroupHouseUIButton.swift in Sources */,
+				3C89949B29CDEEC600BC937C /* DispatchQueueExtension.swift in Sources */,
+				3C2F9FCC29C0F3AE009D5794 /* HouseListInteractor.swift in Sources */,
+				3C2F9FD329C0FC3D009D5794 /* HouseAPIModel.swift in Sources */,
+				3C1398E529C8C48000C93C22 /* CardMemberFooter.swift in Sources */,
+				3C2F9FCE29C0F48A009D5794 /* HouseListModels.swift in Sources */,
+				3C3CC68529D5C9AB006F6AC9 /* CDWorkerProtocol.swift in Sources */,
+				3C0D232829D4A15900EE8F62 /* ViewUIScrollView.swift in Sources */,
+				3C912CF329C2241F00EA1EC2 /* HouseUIButton.swift in Sources */,
+				3C2F9FCA29C0F033009D5794 /* HouseListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA45F6229C0EF110068FB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C89949D29CE1F3300BC937C /* HouseListInteractorTests.swift in Sources */,
+				3C3CBFFB29CCB6FE0093257D /* HouseListViewControllerTests.swift in Sources */,
+				3C89949929CDECC900BC937C /* DispatchQueueMock.swift in Sources */,
+				3C89949F29CE238D00BC937C /* HouseListPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA45F6C29C0EF110068FB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA45F7729C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift in Sources */,
+				3CA45F7529C0EF110068FB12 /* hp_vipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CA45F6829C0EF110068FB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CA45F4F29C0EF100068FB12 /* hp-vip */;
+			targetProxy = 3CA45F6729C0EF110068FB12 /* PBXContainerItemProxy */;
+		};
+		3CA45F7229C0EF110068FB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CA45F4F29C0EF100068FB12 /* hp-vip */;
+			targetProxy = 3CA45F7129C0EF110068FB12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CA45F7829C0EF110068FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CA45F7929C0EF110068FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CA45F7B29C0EF110068FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A6EB79197401F5757E9E27 /* Pods-hp-vip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J59PLV4WT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hp-vip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Harry Potter Members";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.estudies.hp-vip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3CA45F7C29C0EF110068FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9271B1FFA45B3B8C4A31EF8F /* Pods-hp-vip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J59PLV4WT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hp-vip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Harry Potter Members";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.estudies.hp-vip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3CA45F7E29C0EF110068FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2871FA735FD3CD20AC3B139A /* Pods-hp-vipTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73S99VSTU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-D UNITTEST";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.estudies.hp-vipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hp-vip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hp-vip";
+			};
+			name = Debug;
+		};
+		3CA45F7F29C0EF110068FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB2A7D5D1B92FEA607D9892 /* Pods-hp-vipTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73S99VSTU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-D UNITTEST";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.estudies.hp-vipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hp-vip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hp-vip";
+			};
+			name = Release;
+		};
+		3CA45F8129C0EF110068FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CAB95733562529E7F701B13 /* Pods-hp-vip-hp-vipUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73S99VSTU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.estudies.hp-vipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "hp-vip";
+			};
+			name = Debug;
+		};
+		3CA45F8229C0EF110068FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E125675862885AAA6F2EE89 /* Pods-hp-vip-hp-vipUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73S99VSTU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.estudies.hp-vipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "hp-vip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CA45F4B29C0EF100068FB12 /* Build configuration list for PBXProject "hp-vip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA45F7829C0EF110068FB12 /* Debug */,
+				3CA45F7929C0EF110068FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA45F7A29C0EF110068FB12 /* Build configuration list for PBXNativeTarget "hp-vip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA45F7B29C0EF110068FB12 /* Debug */,
+				3CA45F7C29C0EF110068FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA45F7D29C0EF110068FB12 /* Build configuration list for PBXNativeTarget "hp-vipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA45F7E29C0EF110068FB12 /* Debug */,
+				3CA45F7F29C0EF110068FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA45F8029C0EF110068FB12 /* Build configuration list for PBXNativeTarget "hp-vipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CA45F8129C0EF110068FB12 /* Debug */,
+				3CA45F8229C0EF110068FB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C2EA3B629D5AB7500B02615 /* DataBaseModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C2EA3B729D5AB7500B02615 /* DataBaseModel.xcdatamodel */,
+			);
+			currentVersion = 3C2EA3B729D5AB7500B02615 /* DataBaseModel.xcdatamodel */;
+			path = DataBaseModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3CA45F4829C0EF100068FB12 /* Project object */;
+}
