@@ -7,3 +7,6 @@
 * AutoLayout
 * UIApplicationShortcut Dynamic
 * Unit Test
+
+## init project
+  pod install
