@@ -19,18 +19,15 @@ class MemberListInteractor {
     var memberListPresenter: MemberListPresenterLogic
     var memberListAPIWorker: any MemberListWorkerLogic
     var memberListCDWorker: any MemberListCDWorkerLogic
-    var memberListQuickActionWorker: MemberListQuickActionWorkerLogic
     
     init(houseName: String,
          memberListPresenter: MemberListPresenterLogic,
          memberListAPIWorker: any MemberListWorkerLogic = MemberListAPIWorker(),
-         memberListCDWorker: any MemberListCDWorkerLogic = MemberListCDWorker(),
-         memberListQuickActionWorker: MemberListQuickActionWorkerLogic = MemberListQuickActionWorker()) {
+         memberListCDWorker: any MemberListCDWorkerLogic = MemberListCDWorker()) {
         self.houseName = houseName
         self.memberListPresenter = memberListPresenter
         self.memberListAPIWorker = memberListAPIWorker
         self.memberListCDWorker = memberListCDWorker
-        self.memberListQuickActionWorker = memberListQuickActionWorker
     }
     
     deinit {
@@ -59,7 +56,7 @@ extension MemberListInteractor: MemberListInteractorLogic {
                 case .success(let value):
                     self.memberListCDWorker.save(houseName: self.houseName, param: value.members)
                     self.memberListPresenter.fetchMembers(response: value)
-                    self.memberListQuickActionWorker.addShortcut(houseName: self.houseName)
+                    NotificationCenter.default.post(name: .addShortcutItemNotification, object: self.houseName)
                 default:
                     break
                 }

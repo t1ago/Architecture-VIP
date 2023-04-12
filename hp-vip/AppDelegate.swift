@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
+        configureNotificationCenter()
+        
         return true
     }
     
@@ -38,6 +40,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         houseViewController?.router?.membersList(with: shortcutItem.localizedTitle)
         
         return true
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    private func configureNotificationCenter() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(createDynamicShortcutItem),
+                                               name:.addShortcutItemNotification,
+                                               object: nil)
+    }
+    
+    @objc func createDynamicShortcutItem(notification: NSNotification) {
+        guard let houseName = notification.object as? String else { return }
+        
+        DispatchQueue.main.async {
+            QuickActionWorker.addShortcut(houseName: houseName)
+        }
     }
     
     lazy var persistentContainer: NSPersistentContainer = {

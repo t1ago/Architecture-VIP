@@ -1,5 +1,5 @@
 //
-//  MemberListQuickActionWorker.swift
+//  QuickActionWorker.swift
 //  hp-vip
 //
 //  Created by Tiago Henrique Piantavinha on 31/03/23.
@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-protocol MemberListQuickActionWorkerLogic: AnyObject {
-    func addShortcut(houseName: String)
+protocol QuickActionWorkerLogic: AnyObject {
+    static func addShortcut(houseName: String)
 }
 
-class MemberListQuickActionWorker: MemberListQuickActionWorkerLogic {
-    func addShortcut(houseName: String) {
+class QuickActionWorker: QuickActionWorkerLogic {
+    static func addShortcut(houseName: String) {
         var shortcutItens = UIApplication.shared.shortcutItems ?? []
         let typeName = "house.\(houseName)"
         

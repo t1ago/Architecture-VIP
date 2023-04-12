@@ -23,7 +23,7 @@
 		3C2F9FDB29C1FDDB009D5794 /* HouseListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F9FDA29C1FDDB009D5794 /* HouseListConfiguration.swift */; };
 		3C3CBFFB29CCB6FE0093257D /* HouseListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CBFFA29CCB6FE0093257D /* HouseListViewControllerTests.swift */; };
 		3C3CC21A29D71DBA00D7B580 /* MemberListCDWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC21929D71DBA00D7B580 /* MemberListCDWorker.swift */; };
-		3C3CC21C29D748C400D7B580 /* MemberListQuickActionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC21B29D748C400D7B580 /* MemberListQuickActionWorker.swift */; };
+		3C3CC21C29D748C400D7B580 /* QuickActionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC21B29D748C400D7B580 /* QuickActionWorker.swift */; };
 		3C3CC68529D5C9AB006F6AC9 /* CDWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC68429D5C9AB006F6AC9 /* CDWorkerProtocol.swift */; };
 		3C89949929CDECC900BC937C /* DispatchQueueMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89949829CDECC900BC937C /* DispatchQueueMock.swift */; };
 		3C89949B29CDEEC600BC937C /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89949A29CDEEC600BC937C /* DispatchQueueExtension.swift */; };
@@ -45,6 +45,7 @@
 		3CA45F5D29C0EF110068FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA45F5C29C0EF110068FB12 /* Assets.xcassets */; };
 		3CA45F7529C0EF110068FB12 /* hp_vipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45F7429C0EF110068FB12 /* hp_vipUITests.swift */; };
 		3CA45F7729C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45F7629C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift */; };
+		3CAB4F3D29E71DA30033C632 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB4F3C29E71DA30033C632 /* NotificationNameExtension.swift */; };
 		3CFCF9A629D20AC8007373EC /* APIWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFCF9A529D20AC8007373EC /* APIWorkerProtocol.swift */; };
 		6FC3D237410BA39DF103F9C5 /* Pods_hp_vip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC63E152AC9CC95545218B45 /* Pods_hp_vip.framework */; };
 		A8D9E3A65D2FE5FBF1C66493 /* Pods_hp_vip_hp_vipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324DCF0CBD77946F18F8D187 /* Pods_hp_vip_hp_vipUITests.framework */; };
@@ -86,7 +87,7 @@
 		3C2F9FDA29C1FDDB009D5794 /* HouseListConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListConfiguration.swift; sourceTree = "<group>"; };
 		3C3CBFFA29CCB6FE0093257D /* HouseListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewControllerTests.swift; sourceTree = "<group>"; };
 		3C3CC21929D71DBA00D7B580 /* MemberListCDWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListCDWorker.swift; sourceTree = "<group>"; };
-		3C3CC21B29D748C400D7B580 /* MemberListQuickActionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListQuickActionWorker.swift; sourceTree = "<group>"; };
+		3C3CC21B29D748C400D7B580 /* QuickActionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionWorker.swift; sourceTree = "<group>"; };
 		3C3CC68429D5C9AB006F6AC9 /* CDWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDWorkerProtocol.swift; sourceTree = "<group>"; };
 		3C89949829CDECC900BC937C /* DispatchQueueMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueMock.swift; sourceTree = "<group>"; };
 		3C89949A29CDEEC600BC937C /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		3CA45F7029C0EF110068FB12 /* hp-vipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hp-vipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA45F7429C0EF110068FB12 /* hp_vipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hp_vipUITests.swift; sourceTree = "<group>"; };
 		3CA45F7629C0EF110068FB12 /* hp_vipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hp_vipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CAB4F3C29E71DA30033C632 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		3CFCF9A529D20AC8007373EC /* APIWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWorkerProtocol.swift; sourceTree = "<group>"; };
 		494F6D2DA9E203D2637CCD20 /* Pods_hp_vipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hp_vipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CAB95733562529E7F701B13 /* Pods-hp-vip-hp-vipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vip-hp-vipUITests.debug.xcconfig"; path = "Target Support Files/Pods-hp-vip-hp-vipUITests/Pods-hp-vip-hp-vipUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -252,7 +254,6 @@
 				3C912D0129C2466B00EA1EC2 /* MemberListModels.swift */,
 				3C912D0729C2482C00EA1EC2 /* MemberListAPIWorker.swift */,
 				3C3CC21929D71DBA00D7B580 /* MemberListCDWorker.swift */,
-				3C3CC21B29D748C400D7B580 /* MemberListQuickActionWorker.swift */,
 				3C912CFB29C236F400EA1EC2 /* MemberListConfiguration.swift */,
 			);
 			path = MemberList;
@@ -321,6 +322,7 @@
 				3C912CF629C2253C00EA1EC2 /* LoadingUIActivityIndicatior.swift */,
 				3C912D0929C2538C00EA1EC2 /* CardMemberView.swift */,
 				3C1398E429C8C48000C93C22 /* CardMemberFooter.swift */,
+				3C3CC21B29D748C400D7B580 /* QuickActionWorker.swift */,
 			);
 			path = UILib;
 			sourceTree = "<group>";
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				3C89949A29CDEEC600BC937C /* DispatchQueueExtension.swift */,
+				3CAB4F3C29E71DA30033C632 /* NotificationNameExtension.swift */,
 			);
 			path = OSExtension;
 			sourceTree = "<group>";
@@ -551,9 +554,10 @@
 				3C912CFE29C23E2800EA1EC2 /* MemberListInteractor.swift in Sources */,
 				3C2F9FD929C1F9F6009D5794 /* HouseListRouter.swift in Sources */,
 				3C2EA3B829D5AB7500B02615 /* DataBaseModel.xcdatamodeld in Sources */,
-				3C3CC21C29D748C400D7B580 /* MemberListQuickActionWorker.swift in Sources */,
+				3C3CC21C29D748C400D7B580 /* QuickActionWorker.swift in Sources */,
 				3C912D0429C246BA00EA1EC2 /* MemberAPIModel.swift in Sources */,
 				3C912CF729C2253C00EA1EC2 /* LoadingUIActivityIndicatior.swift in Sources */,
+				3CAB4F3D29E71DA30033C632 /* NotificationNameExtension.swift in Sources */,
 				3C912D0629C2474100EA1EC2 /* MemberViewModel.swift in Sources */,
 				3C2F9FD729C1EB9E009D5794 /* HouseViewModel.swift in Sources */,
 				3C912D0A29C2538C00EA1EC2 /* CardMemberView.swift in Sources */,
