@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		15A1736A9030F698B631A72C /* Pods_hp_vipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F6D2DA9E203D2637CCD20 /* Pods_hp_vipTests.framework */; };
 		3C0D232829D4A15900EE8F62 /* ViewUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D232729D4A15900EE8F62 /* ViewUIScrollView.swift */; };
+		3C12058429E8673500CF0356 /* FindMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12058329E8673500CF0356 /* FindMemberViewController.swift */; };
+		3C12058629E8675600CF0356 /* MemberListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12058529E8675600CF0356 /* MemberListRouter.swift */; };
 		3C1398E529C8C48000C93C22 /* CardMemberFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1398E429C8C48000C93C22 /* CardMemberFooter.swift */; };
 		3C2EA3B829D5AB7500B02615 /* DataBaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EA3B629D5AB7500B02615 /* DataBaseModel.xcdatamodeld */; };
 		3C2EA3BA29D5AD5200B02615 /* HouseListCDWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EA3B929D5AD5200B02615 /* HouseListCDWorker.swift */; };
@@ -41,6 +43,7 @@
 		3C912D0629C2474100EA1EC2 /* MemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0529C2474100EA1EC2 /* MemberViewModel.swift */; };
 		3C912D0829C2482C00EA1EC2 /* MemberListAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0729C2482C00EA1EC2 /* MemberListAPIWorker.swift */; };
 		3C912D0A29C2538C00EA1EC2 /* CardMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C912D0929C2538C00EA1EC2 /* CardMemberView.swift */; };
+		3C9FD63A29E98494005CD16B /* FindMemberLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FD63929E98494005CD16B /* FindMemberLocationView.swift */; };
 		3CA45F5429C0EF100068FB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45F5329C0EF100068FB12 /* AppDelegate.swift */; };
 		3CA45F5D29C0EF110068FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA45F5C29C0EF110068FB12 /* Assets.xcassets */; };
 		3CA45F7529C0EF110068FB12 /* hp_vipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA45F7429C0EF110068FB12 /* hp_vipUITests.swift */; };
@@ -73,6 +76,8 @@
 		2871FA735FD3CD20AC3B139A /* Pods-hp-vipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hp-vipTests.debug.xcconfig"; path = "Target Support Files/Pods-hp-vipTests/Pods-hp-vipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		324DCF0CBD77946F18F8D187 /* Pods_hp_vip_hp_vipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hp_vip_hp_vipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0D232729D4A15900EE8F62 /* ViewUIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUIScrollView.swift; sourceTree = "<group>"; };
+		3C12058329E8673500CF0356 /* FindMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMemberViewController.swift; sourceTree = "<group>"; };
+		3C12058529E8675600CF0356 /* MemberListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListRouter.swift; sourceTree = "<group>"; };
 		3C1398E429C8C48000C93C22 /* CardMemberFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMemberFooter.swift; sourceTree = "<group>"; };
 		3C2EA3B729D5AB7500B02615 /* DataBaseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBaseModel.xcdatamodel; sourceTree = "<group>"; };
 		3C2EA3B929D5AD5200B02615 /* HouseListCDWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListCDWorker.swift; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 		3C912D0529C2474100EA1EC2 /* MemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewModel.swift; sourceTree = "<group>"; };
 		3C912D0729C2482C00EA1EC2 /* MemberListAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListAPIWorker.swift; sourceTree = "<group>"; };
 		3C912D0929C2538C00EA1EC2 /* CardMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMemberView.swift; sourceTree = "<group>"; };
+		3C9FD63929E98494005CD16B /* FindMemberLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMemberLocationView.swift; sourceTree = "<group>"; };
 		3CA45F5029C0EF100068FB12 /* hp-vip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hp-vip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA45F5329C0EF100068FB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA45F5C29C0EF110068FB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,11 +170,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3C12058229E8670700CF0356 /* FindMember */ = {
+			isa = PBXGroup;
+			children = (
+				3C12058329E8673500CF0356 /* FindMemberViewController.swift */,
+			);
+			path = FindMember;
+			sourceTree = "<group>";
+		};
 		3C2F9FC729C0EF51009D5794 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				3C2F9FC829C0EFA4009D5794 /* HouseList */,
 				3C912CF829C2368400EA1EC2 /* MemberList */,
+				3C12058229E8670700CF0356 /* FindMember */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -255,6 +270,7 @@
 				3C912D0729C2482C00EA1EC2 /* MemberListAPIWorker.swift */,
 				3C3CC21929D71DBA00D7B580 /* MemberListCDWorker.swift */,
 				3C912CFB29C236F400EA1EC2 /* MemberListConfiguration.swift */,
+				3C12058529E8675600CF0356 /* MemberListRouter.swift */,
 			);
 			path = MemberList;
 			sourceTree = "<group>";
@@ -323,6 +339,7 @@
 				3C912D0929C2538C00EA1EC2 /* CardMemberView.swift */,
 				3C1398E429C8C48000C93C22 /* CardMemberFooter.swift */,
 				3C3CC21B29D748C400D7B580 /* QuickActionWorker.swift */,
+				3C9FD63929E98494005CD16B /* FindMemberLocationView.swift */,
 			);
 			path = UILib;
 			sourceTree = "<group>";
@@ -573,10 +590,13 @@
 				3C2F9FCC29C0F3AE009D5794 /* HouseListInteractor.swift in Sources */,
 				3C2F9FD329C0FC3D009D5794 /* HouseAPIModel.swift in Sources */,
 				3C1398E529C8C48000C93C22 /* CardMemberFooter.swift in Sources */,
+				3C12058629E8675600CF0356 /* MemberListRouter.swift in Sources */,
 				3C2F9FCE29C0F48A009D5794 /* HouseListModels.swift in Sources */,
 				3C3CC68529D5C9AB006F6AC9 /* CDWorkerProtocol.swift in Sources */,
 				3C0D232829D4A15900EE8F62 /* ViewUIScrollView.swift in Sources */,
+				3C12058429E8673500CF0356 /* FindMemberViewController.swift in Sources */,
 				3C912CF329C2241F00EA1EC2 /* HouseUIButton.swift in Sources */,
+				3C9FD63A29E98494005CD16B /* FindMemberLocationView.swift in Sources */,
 				3C2F9FCA29C0F033009D5794 /* HouseListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,7 +763,7 @@
 				DEVELOPMENT_TEAM = J59PLV4WT4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "hp-vip/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Harry Potter Members";
+				INFOPLIST_KEY_CFBundleDisplayName = Hogwarts;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
@@ -779,7 +799,7 @@
 				DEVELOPMENT_TEAM = J59PLV4WT4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "hp-vip/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Harry Potter Members";
+				INFOPLIST_KEY_CFBundleDisplayName = Hogwarts;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";

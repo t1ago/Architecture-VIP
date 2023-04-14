@@ -10,12 +10,16 @@ import Foundation
 class MemberListConfiguration {
     static func configure(houseName: String,
                           viewController: MemberListViewController) {
+        let router = MemberListRouter()
+        router.viewController = viewController
+        
         let presenter = MemberListPresenter()
         presenter.viewController = viewController
         
         let interactor = MemberListInteractor(houseName: houseName,
                                               memberListPresenter: presenter)
+        
         viewController.interactor = interactor
+        viewController.router = router
     }
 }
-

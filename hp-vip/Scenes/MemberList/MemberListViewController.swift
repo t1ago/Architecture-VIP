@@ -16,6 +16,7 @@ protocol MemberListViewControllerLogic: AnyObject {
 class MemberListViewController: UIViewController {
     
     var interactor: MemberListInteractorLogic?
+    var router: MemberListRouterLogic?
     var members: [MemberViewModel] = []
     var membersAlive: Int = 0
     let refreshControl = UIRefreshControl()
@@ -131,6 +132,11 @@ extension MemberListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.updateData(member: viewModel)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let member = members[indexPath.row]
+        router?.find(member: member)
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
